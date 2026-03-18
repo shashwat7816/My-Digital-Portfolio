@@ -1,73 +1,104 @@
-# React + TypeScript + Vite
+# 🧑‍💻 Shashwat Kashyap — My Digital Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website showcasing my skills, projects, training, certificates, and achievements as a Full Stack Developer and AI Enthusiast.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [shashwat7816.github.io/My-Digital-Portfolio](https://shashwat7816.github.io/My-Digital-Portfolio) *(update once deployed)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero Section** — Animated introduction with role typewriter effect and 3D Spline background
+- **About** — Bio, stats (CGPA · Projects · Problems Solved) with icon cards
+- **Skills** — Categorised tech stack (Languages, Frontend, Backend, Tools, Cloud, AI/ML)
+- **Projects** — Showcase with live demo links, GitHub links, tags, and descriptions
+- **Training** — Internships and professional training experience
+- **Certificates** — PDF viewer for earned certifications (Infosys, Cloud Computing, etc.)
+- **Achievements** — Academic and competitive highlights
+- **Resume** — Inline resume viewer with download option
+- **Contact** — Contact form + social links
+- **Dark/Light Theme** — Smooth toggle with persistent context
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Category | Tools |
+|---|---|
+| **Framework** | React 19 + TypeScript |
+| **Build Tool** | Vite 6 |
+| **Styling** | Tailwind CSS v3 + Custom CSS |
+| **Animations** | Framer Motion |
+| **3D / Spline** | @splinetool/react-spline |
+| **Icons** | Lucide React + React Icons |
+| **Linting** | ESLint + TypeScript ESLint |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Hero.tsx           # Landing hero with Spline 3D
+│   ├── About.tsx          # Bio + stat cards
+│   ├── Skills.tsx         # Tech skills grid
+│   ├── Projects.tsx       # Project showcase cards
+│   ├── Training.tsx       # Internship/training timeline
+│   ├── Certificates.tsx   # Certificate PDF viewer
+│   ├── Achievements.tsx   # Achievements list
+│   ├── Resume.tsx         # Resume viewer + download
+│   ├── Contact.tsx        # Contact form
+│   ├── Header.tsx         # Navbar with theme toggle
+│   └── Section.tsx        # Reusable section wrapper
+├── context/
+│   └── ThemeContext.tsx   # Dark/light theme provider
+├── App.tsx
+└── main.tsx
+public/
+├── shashwat_cv.pdf        # Downloadable resume
+├── projects/              # Project screenshots
+└── videos/               # Demo videos
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- Node.js >= 18
+- npm
+
+### Install & Run
+
+```bash
+# Clone the repo
+git clone https://github.com/shashwat7816/My-Digital-Portfolio.git
+cd My-Digital-Portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
 ```
+
+### Production Build
+
+```bash
+npm run build
+# Output goes to /dist
+```
+
+---
+
+## 📬 Contact
+
+**Shashwat Kashyap**
+- 📧 [shashwat7816@gmail.com](mailto:shashwat7816@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/shashwat7816)
+- 🐙 [GitHub](https://github.com/shashwat7816)
+
+---
+
+> Built with ❤️ by Shashwat Kashyap
