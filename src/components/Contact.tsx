@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="text-[10px] text-text-muted font-mono uppercase tracking-[0.4em] pt-xl border-t border-border-default/10">
-          &copy; {new Date().getFullYear()} Shashwat Kashyap. Built with Passion & AI.
+          &copy; {new Date().getFullYear()} Shashwat Kashyap. Built with Passion & ❤️.
         </div>
       </div>
     </footer>
