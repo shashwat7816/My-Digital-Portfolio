@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
       degree: "Bachelor of Technology in Computer Science",
       institution: "Lovely Professional University (LPU)",
       location: "Phagwara, Punjab",
-      details: "Full Stack Development & AI Specialization",
+      details: "Full Stack Development",
       stats: { label: "CGPA", value: "8.08 / 10.0" }
     },
     {
@@ -42,10 +42,10 @@ const Resume: React.FC = () => {
               <GraduationCap className="text-cyan-neon" />
               Education
             </h3>
-            
+
             <div className="relative border-l border-border-default/20 pl-lg ml-md space-y-2xl">
               {education.map((edu, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -54,16 +54,16 @@ const Resume: React.FC = () => {
                   className="relative"
                 >
                   <div className="absolute -left-[1.65rem] top-1.5 w-3 h-3 bg-bg-primary border-2 border-cyan-neon rounded-full z-10"></div>
-                  
+
                   <div className="flex items-center gap-sm text-[10px] text-cyan-neon uppercase tracking-[0.3em] font-mono mb-sm">
                     <Calendar size={12} />
                     {edu.period}
                   </div>
-                  
+
                   <h4 className="text-2xl font-bold text-text-primary mb-xs font-display">
                     {edu.degree}
                   </h4>
-                  
+
                   <p className="text-indigo-soft font-semibold font-body">
                     {edu.institution}
                   </p>
@@ -71,11 +71,11 @@ const Resume: React.FC = () => {
                     <MapPin size={10} className="text-accent-secondary" />
                     <span>{edu.location}</span>
                   </div>
-                  
+
                   <p className="text-text-secondary mb-md italic font-body">
                     {edu.details}
                   </p>
-                  
+
                   <div className="inline-flex items-center gap-sm px-md py-1 bg-surface-elevated rounded-md border border-border-default/20 text-sm">
                     <span className="text-text-muted font-body">{edu.stats.label}:</span>
                     <span className="text-cyan-neon font-black font-mono">{edu.stats.value}</span>
