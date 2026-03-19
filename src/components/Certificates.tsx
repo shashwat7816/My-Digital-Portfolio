@@ -23,7 +23,7 @@ const certificates = [
   {
     title: 'Cloud Computing',
     issuer: 'NPTEL',
-    date: 'April 2024',
+    date: 'April 2025',
     description: 'Comprehensive certification on cloud architectures, virtualization, and deployment strategies.',
     file: '/Cloud Computing.pdf',
     type: 'pdf',

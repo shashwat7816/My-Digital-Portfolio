@@ -6,7 +6,7 @@ import CyberCard from './CyberCard';
 import {
   SiReact, SiTailwindcss,
   SiNodedotjs, SiExpress, SiMongodb, SiMysql,
-  SiGit, SiVercel, SiPython, SiCplusplus, SiJavascript,
+  SiGit, SiVercel, SiPython, SiCplusplus, SiC, SiJavascript,
   SiHtml5, SiCss
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
@@ -16,6 +16,7 @@ const technicalSkills = [
   {
     category: 'Languages',
     skills: [
+      { name: 'C',          icon: <SiC           size={16} color="#A8B9CC" /> },
       { name: 'C++',        icon: <SiCplusplus   size={16} color="#00599C" /> },
       { name: 'Java',       icon: <FaJava         size={16} color="#ED8B00" /> },
       { name: 'Python',     icon: <SiPython       size={16} color="#3776AB" /> },
